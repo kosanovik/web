@@ -3,21 +3,20 @@ h3 {
     text-align: center;
 }
 
-/* Основной стиль страницы */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #778899; /* Темный фон страницы */
+    background-color: #778899;
     color: white;
     line-height: 1.6;
 }
 
-/* Градиентная навигационная панель с круглыми углами */
+
 .navbar {
-    background: linear-gradient(to right, #2c3e50, #8e44ad); /* Градиент от темно-синего к фиолетовому */
+    background: linear-gradient(to right, #2c3e50, #8e44ad);
     overflow: hidden;
     text-align: center;
-    border-radius: 15px; /* Круглые углы панели */
-    padding: 10px 0; /* Немного отступа сверху и снизу */
+    border-radius: 15px;
+    padding: 10px 0;
 }
 
 .navbar ul {
@@ -34,18 +33,17 @@ body {
 .navbar a {
     display: block;
     color: white;
-    font-weight: bold; /* Жирный текст */
+    font-weight: bold;
     text-decoration: none;
     padding: 15px 25px;
     transition: all 0.3s ease-in-out;
     letter-spacing: 1px;
-    border-radius: 15px; /* Окружающие углы каждого пункта меню */
-    position: relative; /* Позиционирование для псевдоклассов */
+    border-radius: 15px;
+    position: relative;
     z-index: 1; /* Перекрытие слоев */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Белый ореол вокруг букв */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Эффект свечения кнопок при наведении */
 .navbar a::after {
     content: "";
     position: absolute;
@@ -53,20 +51,20 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Сохраняет подсветку ниже текста */
+    z-index: -1;
     opacity: 0;
-    filter: blur(10px); /* Размытый эффект света */
-    background-image: linear-gradient(#00FF7F, #00FF7F); /* Светящийся градиент от жёлтого к зеленому */
+    filter: blur(10px);
+    background-image: linear-gradient(#00FF7F, #00FF7F);
     transition: opacity 0.3s ease-in-out;
 }
 
 .navbar a:hover::after {
-    opacity: 1; /* Появляется свечение при наведении */
+    opacity: 1;
 }
 
 .navbar a.active,
 .navbar a:hover {
-    color: #ffffff; /* Выделяется белым текстом */
+    color: #ffffff;
 }
 
 }
