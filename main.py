@@ -166,10 +166,6 @@ def printlist():
 
 @app.route('/queue')
 def queue():
-    # loop.index - номер итерации, начиная с 1
-    # loop.index0 - номер итерации, начиная с 0
-    # loop.first - True, если первая итерация
-    # loop.last - True, если последняя итерация
     return render_template('vars.html', title='Стоим в очереди')
 
 
