@@ -84,19 +84,6 @@ def sample_page2():
         return html.read()
 
 
-# Так делать мы не будем
-# x = 5
-# @app.route('/1')
-# def show_num():
-#     global x
-#     x += 1
-#     return str(x)
-
-# <string> - по умолчанию строка
-# <int:number> - целое
-# <float:number> - дес. дробь
-# <path:p> - может содержать слэши для указания пути
-# <uuid:id> - строка-идентификатор (16-байт в HEX-формате)
 @app.route('/greeting/<string:user>/<int:id_num>')
 def greeting(user, id_num):
     return f'Привет, {user} c id={id_num}'
